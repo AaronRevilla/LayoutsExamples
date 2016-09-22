@@ -1,5 +1,6 @@
 package com.example.aaron.layoutsexamples;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -48,5 +49,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startAnotherActivity(View view) {
+        Intent i = new Intent(this, Main3Activity.class);
+        startActivity(i);
     }
 }
